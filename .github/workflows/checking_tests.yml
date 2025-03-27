@@ -1,4 +1,5 @@
 name: Checking Tests
+
 # This is a workflow that checks the tests in the project
 # It runs on the ubuntu-latest runner
 # It listens for push and pull_request events on the develop and staging branches
