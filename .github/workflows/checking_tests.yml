@@ -1,5 +1,12 @@
 name: Checking Tests
-
+# This is a workflow that checks the tests in the project
+# It runs on the ubuntu-latest runner
+# It listens for push and pull_request events on the develop and staging branches
+# It has a single job called test
+# The job checks out the code, sets up Node.js, installs dependencies, and runs the tests
+# The tests are run using the npm run test command
+# The workflow is triggered when code is pushed to the develop or staging branches
+# or when a pull request is opened or updated on the develop or staging branches
 on:
   pull_request:
     branches:
